@@ -118,12 +118,9 @@ a {
 
 /* Герой */
 .hero {
+  padding: 200px 0;
   text-align: center;
   background-color: var(--footer-background-color);
-}
-
-.hero .container {
-  padding: 200px 280px;
 }
 
 .hero-title {
@@ -168,13 +165,24 @@ a {
 }
 /* Особенности */
 
+.features-section {
+  padding-top: 94px;
+}
+
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .features-list {
   display: flex;
-  margin-top: 51px;
+  margin: 0;
 }
 
 .features-item:not(:last-child) {
@@ -225,7 +233,6 @@ a {
 
 .team-list {
   display: flex;
-  width: 270px;
   margin: 0;
   padding: 0;
 }
@@ -234,7 +241,6 @@ a {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -245,8 +251,13 @@ a {
   margin-right: 30px;
 }
 
+.team-block {
+  margin: 0;
+  padding: 30px 59px 30px 60px;
+}
+
 .team-title {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -256,8 +267,7 @@ a {
   color: var(--title-text-color);
 }
 .team-positions {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
@@ -324,11 +334,6 @@ a {
 
 /* Фильтр */
 
-.portfolio-main-title {
-  margin: 0;
-  visibility: hidden;
-}
-
 .portfolio-button-list {
   margin: 0;
   padding: 0;
@@ -382,11 +387,14 @@ a {
   margin-right: 0;
 }
 
-.portfolio-link {
+.portfolio-wrapper {
+  padding: 20px 24px 20px 24px;
 }
 
 .portfolio-title {
-  margin: 20px 24px 4px;
+  /* margin: 20px 24px 4px; */
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -395,7 +403,8 @@ a {
 }
 
 .portfolio-text {
-  margin: 0 24px 20px;
+  /* margin: 0 24px 20px; */
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
